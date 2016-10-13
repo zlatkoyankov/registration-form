@@ -1,5 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 
+import RegistrationForm from './registration-form';
+
 class Application extends Component {
   constructor(props, context){
     super(props, context);
@@ -9,8 +11,8 @@ class Application extends Component {
 
   render() {
     return (
-        <div>
-          Hello World
+        <div className="container">
+          <RegistrationForm />
         </div>
     );
   }
