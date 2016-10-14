@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 
 import Application from './components/application';
 
+//  noinspection Eslint
 ReactDOM.render(
-    <Application />,
+  <Application />,
   document.querySelector('.app-container')
 );

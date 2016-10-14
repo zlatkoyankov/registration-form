@@ -22,11 +22,16 @@
   "dependencies": {
     "babel-polyfill": "6.8.0",
     "bootstrap": "3.3.6",
+    "classnames": "^2.2.5",
     "jquery": "2.2.3",
-    "lodash": "^4.16.1",
+    "lodash": "^4.16.4",
     "react": "15.0.2",
     "react-bootstrap": "^0.30.3",
-    "react-dom": "15.0.2"
+    "react-dom": "15.0.2",
+    "react-addons-css-transition-group": "15.3.2",
+    "validator": "^6.0.0",
+    "webpack": "1.13.0",
+    "expect": "1.19.0"
   },
   "devDependencies": {
     "babel-cli": "6.8.0",
@@ -44,12 +49,13 @@
     "cross-env": "1.0.7",
     "css-loader": "0.23.1",
     "enzyme": "2.2.0",
-    "eslint": "2.9.0",
-    "eslint-plugin-import": "1.6.1",
-    "eslint-plugin-react": "5.0.1",
+    "eslint": "3.7.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "2.2.2",
+    "eslint-plugin-react": "6.4.1",
     "eslint-watch": "2.1.11",
     "eventsource-polyfill": "0.9.6",
-    "expect": "1.19.0",
     "express": "4.13.4",
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.8.5",
@@ -63,7 +69,6 @@
     "rimraf": "2.5.2",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
-    "webpack": "1.13.0",
     "webpack-dev-middleware": "1.6.1",
     "webpack-hot-middleware": "2.10.0"
   }
