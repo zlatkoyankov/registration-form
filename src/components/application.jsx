@@ -11,9 +11,9 @@ class Application extends Component {
 
   render() {
     return (
-      < div className="container">
+      <div className="container">
         <Registration />
-      </ div >);
+      </div>);
   }
 }
 

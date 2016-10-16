@@ -48,8 +48,7 @@ class RegistrationForm extends React.Component {
       this.props.handleSubmit();
     //}
   }
-
-
+  
   render() {
     const { errors, email, first_name, username, password, termCondition, disableSubmit} = this.state;
     return (
