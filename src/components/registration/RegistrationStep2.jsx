@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class ReadyPlay extends Component {
+class RegistrationStep2 extends Component {
 
   handleContinue() {
     this.props.handleSubmit();
@@ -12,23 +12,24 @@ class ReadyPlay extends Component {
 
   render() {
     return (
-      <div>
+      <div className="registration registration-step2">
         <p>You’re ready to play!
         In order to play with real money, you will need to provide more information. You can do so
         now if you wish, or skip and do it at a later time.</p>
         <button
-          onClick={this.handleContinue.bind(this)}
-          className="btn btn-lg btn-primary btn-block">
-          Continue Registration<span className="btn-arrow-next glyphicon glyphicon-arrow-right"></span>
-        </button>
-        <button
           onClick={this.handleSkip}
-          className="btn btn-lg btn-primary btn-block">
+          className="btn btn-info center-block btn-skip">
           Skip
+        </button>
+
+        <button
+          onClick={this.handleContinue.bind(this)}
+          className="btn btn-lg btn-primary btn-block move-arrow">
+          Continue Registration<span className="btn-arrow-down glyphicon glyphicon-arrow-down"></span>
         </button>
       </div>
     );
   }
 }
 
-export default ReadyPlay;
+export default RegistrationStep2;

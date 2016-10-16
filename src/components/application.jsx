@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-import Registration from './Registration';
+import Registration from './registration/Registration';
 
 class Application extends Component {
   constructor(props, context) {

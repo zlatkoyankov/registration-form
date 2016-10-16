@@ -7,7 +7,7 @@ const TextFieldGroup = ({ field, value, label, error, type, onChange, onBlur, re
       <label htmlFor={field} className="control-label">{label}</label>
       <input
         onChange={onChange}
-        onblur={onBlur}
+        onBlur={onBlur}
         name={field}
         type={type}
         value={value}
@@ -25,7 +25,7 @@ TextFieldGroup.propTypes = {
   label: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  required: PropTypes.bool,
+  required: PropTypes.string,
   autoFocus: PropTypes.bool,
   error: PropTypes.string,
   onBlur: PropTypes.func
