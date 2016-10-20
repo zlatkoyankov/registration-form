@@ -1,4 +1,3 @@
-import Validator from 'validator';
 import { isNull, isEmpty, inRange } from 'lodash';
 import * as messages from './ErrorMessages';
 
