@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+
 module.exports = {
   devtool: 'cheap-module-source-map',
   entry: './src/index',
@@ -16,9 +17,12 @@ module.exports = {
       }
     })
   ],
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
+  },
   module: {
     loaders: [
-      { test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel'] },
+      { test: /\.js$|.jsx$/, include: path.join(__dirname, 'src'), loaders: ['babel'] },
       { test: /(\.css)$/, loaders: ['src/style', 'css'] },
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file' },
       { test: /\.(woff|woff2)$/, loader: 'url?prefix=font/&limit=5000' },
